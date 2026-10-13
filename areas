@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class CalcularAreas {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("=== CÁLCULO DE ÁREAS ===");
+
+        // 1. Área del círculo (A = π * r²)
+        System.out.print("\nIntroduce el radio del círculo: ");
+        double radio = scanner.nextDouble();
+        double areaCirculo = Math.PI * Math.pow(radio, 2);
+
+        // 2. Área del cuadrado (A = l²)
+        System.out.print("Introduce el lado del cuadrado: ");
+        double lado = scanner.nextDouble();
+        double areaCuadrado = Math.pow(lado, 2);
+
+        // Resultados
+        System.out.println("\n--- RESULTADOS ---");
+        System.out.printf("El área del círculo es: %.2f\n", areaCirculo);
+        System.out.printf("El área del cuadrado es: %.2f\n", areaCuadrado);
+
+        scanner.close();
+    }
+}
