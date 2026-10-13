@@ -4,7 +4,7 @@ public class OperacionesBasicas {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Solicitar el primer número
+        // Solicitar el primer número de tipo double
         System.out.print("Introduce el primer número: ");
         double num1 = scanner.nextDouble();
 
