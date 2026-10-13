@@ -17,10 +17,18 @@ public class CalcularAreas {
         double lado = scanner.nextDouble();
         double areaCuadrado = Math.pow(lado, 2);
 
+        // 3. Área del triángulo (A = (base * altura) / 2)
+        System.out.print("Introduce la base del triángulo: ");
+        double baseTriangulo = scanner.nextDouble();
+        System.out.print("Introduce la altura del triángulo: ");
+        double alturaTriangulo = scanner.nextDouble();
+        double areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
+
         // Resultados
         System.out.println("\n--- RESULTADOS ---");
         System.out.printf("El área del círculo es: %.2f\n", areaCirculo);
         System.out.printf("El área del cuadrado es: %.2f\n", areaCuadrado);
+        System.out.printf("El área del triángulo es: %.2f\n", areaTriangulo);
 
         scanner.close();
     }
